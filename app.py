@@ -118,7 +118,7 @@ def _grafica_efectividad(conf: str) -> None:
 # ----------------------------------------------------------------- Menú
 MODULOS = {
     "Intercambiador de calor (LMTD / e-NTU)": render_intercambiador,
-    "Diseno 3D y Balance": vista_3d.render,  
+    "Diseno 3D y Balance": vista_3d.render,
 }
 
 st.sidebar.title("⚗️ Operaciones Unitarias")
