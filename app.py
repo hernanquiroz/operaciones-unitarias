@@ -6,6 +6,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 import nucleo_hx as hx
+import vista_3d 
 
 st.set_page_config(
     page_title="Operaciones Unitarias",
