@@ -105,7 +105,7 @@ def _grafica_efectividad(conf: str) -> None:
         height=420,
         legend_title_text="Cmin/Cmax",
     )
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
 
     tabla = pd.DataFrame({"NTU": [0.5, 1.0, 2.0, 3.0, 4.0, 5.0]})
     for cr in [0.25, 0.5, 1.0]:
@@ -113,7 +113,7 @@ def _grafica_efectividad(conf: str) -> None:
             round(hx.efectividad(n, cr, conf), 4) for n in tabla["NTU"]
         ]
     with st.expander("Tabla de valores ε–NTU"):
-        st.dataframe(tabla, hide_index=True, use_container_width=True)
+        st.dataframe(tabla, hide_index=True, width='stretch')
 
 # ----------------------------------------------------------------- Menú
 MODULOS = {
