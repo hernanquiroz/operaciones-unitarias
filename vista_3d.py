@@ -54,7 +54,7 @@ def render():
             columns=["Corriente", "m [kg/s]", "cp [kJ/kg*K]", "T [C]", "H [kW]"],
         ),
         hide_index=True,
-        use_container_width=True
+        width='stretch'
     )
     dh = m_h * cp_h * (th_in - r["th_out"]) - m_c * cp_c * (r["tc_out"] - tc_in)
     st.info(f"Balance de energia: Q cedido - Q ganado = {dh:.6f} kW (cero = balance cerrado)")
